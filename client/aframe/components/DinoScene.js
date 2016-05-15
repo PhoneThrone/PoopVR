@@ -14,6 +14,9 @@ class DinoScene extends React.Component {
         <img id='sky' src='/assets/prehistoric.jpg' />
         <img id='ground' src='/assets/muddyGround.jpg' />
         <img id='ptero' src='/assets/ptero.png' />
+        <audio id='jungleSounds' src='/assets/jungleSounds.mp3' />
+        <audio id='trexSound' src='/assets/trex.mp3' />
+        <audio id='pteroSound' src='/assets/pter.mp3' />
       </a-assets>
       <a-sky src='#sky'/>
 
@@ -33,12 +36,14 @@ class DinoScene extends React.Component {
 
       <a-plane id='ground' src='#ground' position='0 0 -3' rotation='-90 0 0' width='10' height='10' />
 
+      <a-entity id='battle' position='0.1 2 -0.1' sound='src:assets/jungleSounds.mp3; autoplay:true; loop:true;' />
+
       <a-entity position='0 1.5 0'> 
         <a-camera id='camera' wasd-controls-enabled='true'/>
       </a-entity>
 
       <a-entity position='0 10 -10'>
-        <a-plane src='#ptero' sound='src: /assets/pter.mp3; autoplay: true; loop: true; volume: 10;' transparent='true' width='3' height='2' rotation='90 0 0'/>
+        <a-plane src='#ptero' sound='src: /assets/pter.mp3; autoplay: true; loop: true; volume: 30;' transparent='true' width='3' height='2' rotation='90 0 0'/>
         <a-animation
           attribute='position'
           dur='15000'
