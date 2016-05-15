@@ -20,14 +20,15 @@ class DinoScene extends React.Component {
       </a-assets>
       <a-sky src='#sky'/>
 
-      <a-entity position='0 0 0'>
+      <a-entity position='0 0 0' rotation='0 -180 0'>
         <a-model scale='1.1 1.1 1.1' src='/assets/dino.dae' sound='src: /assets/trexSounds.mp3; loop: true; autoplay: true; volume: 25;' 
           id='trex' position='33 -8 0' rotation='0 95 0'>
         </a-model>
         <a-animation attribute='rotation'
-                     dur='13000'
+                     dur='24000'
                      fill='forwards'
-                     to='0 360 0'
+                     from='0 -180 0'
+                     to='0 180 0'
                      easing='linear'
                      repeat='indefinite'/>
       </a-entity>
