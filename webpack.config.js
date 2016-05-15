@@ -21,7 +21,8 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/, include: __dirname + '/client', loader: 'babel-loader'
-      }
+      },
+      {test: /\.css$/, loader: "style-loader!css-loader"}
     ]
   },
   plugins: [HTMLWebpackPluginConfig]
