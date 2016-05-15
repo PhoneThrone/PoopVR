@@ -16,11 +16,13 @@ class WarScene extends React.Component {
         <audio id='siren' src='assets/siren.mp3' />
         <audio id='planeSound' src='assets/planeSound.mp3' />
         <audio id='battle' src='assets/battle.mp3' />
+        <img id='sky' src='/assets/gloomySky.jpg' />
+        <img id='ground' src='/assets/redDirt.jpg' />
       </a-assets>
 
-      <a-sky src='/assets/gloomySky.jpg' rotation='60 0 0' />
+      <a-sky src='#sky' rotation='60 0 0' />
 
-      <a-plane id='ground' src='/assets/redDirt.jpg' material='side:double' 
+      <a-plane id='ground' src='#ground' material='side:double' 
         position='0 0 -3' rotation='-90 0 0' width='10' height='10' />
 
       <a-entity position='0 1.5 0'>
