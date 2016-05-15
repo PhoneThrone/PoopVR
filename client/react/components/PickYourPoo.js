@@ -31,17 +31,20 @@ class PickYourPoo extends React.Component {
       return <this.state.scene />;
     } else {
       return (
-        <div>
-          <h1 class="title">PoopVR</h1>
+        <div className="center-align">
+          <h1>PoopVR</h1>
           <i class="em em-poop"></i>
-          <div class="status">
-            <p>Pick your Poo!</p>
-          </div>
-          <h3>Poop Scenes</h3>
+          <h3  className="center-align">Poop Scenes</h3>
           <ul>
-            <li onClick={() => this.loadPoo('war')}>World War Two</li>
-            <li onClick={() => this.loadPoo('dino')}>Prehistoric Poo</li>
-            <li onClick={() => this.loadPoo('moon')}>Lunar Poo</li>
+            <div onClick={() => this.loadPoo('war')} className="wrapper">
+              <li className="center-align">World War Two</li>
+            </div>
+            <div onClick={() => this.loadPoo('dino')} className="wrapper">
+              <li className="center-align">Prehistoric Poo</li>
+            </div>
+            <div onClick={() => this.loadPoo('moon')} className="wrapper">
+              <li className="center-align">Lunar Poo</li>
+            </div>
           </ul>
           <h3>Theatrical Experiences</h3>
             <ul>

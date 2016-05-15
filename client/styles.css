@@ -1,0 +1,38 @@
+body {
+  background-color: #ddc78c;
+  font-family: 'Montserrat', sans-serif;
+}
+h1 {
+  font-family: 'Molle', cursive;
+  text-align: center;
+  font-size: 10em;
+  color: #6E401B;
+}
+
+li {
+  font-size: 1.5em;
+  display: inline;
+  text-align: center;
+  margin: 10px 40px;
+}
+
+.status {
+  margin-left: 22%;
+  font-style: italic;
+  margin-bottom: 10%;
+}
+
+.thumbnail {
+  width: 15%;
+  display: inline;
+  margin-left: 42.5%;
+}
+
+.wrapper:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: inline;
+  margin-bottom: 10px;
+}
