@@ -7,7 +7,7 @@ class DinoScene extends React.Component {
 
   render () {
     return (
-      <a-scene>
+      <a-scene fog="type: linear; color: #AAA; far:6000;">
       <a-assets>
         <a-asset-item id='stall' src='/assets/Toilet_Stall.dae' />
         <a-asset-item id='fern' src='/assets/fern.dae' />
