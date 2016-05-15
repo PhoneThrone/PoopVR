@@ -11,8 +11,11 @@ class DinoScene extends React.Component {
       <a-assets>
         <a-asset-item id='stall' src='/assets/Toilet_Stall.dae' />
         <a-asset-item id='fern' src='/assets/fern.dae' />
+        <img id='sky' src='/assets/prehistoric.jpg' />
+        <img id='ground' src='/assets/muddyGround.jpg' />
+        <img id='ptero' src='/assets/ptero.png' />
       </a-assets>
-      <a-sky src='/assets/prehistoric.jpg'/>
+      <a-sky src='#sky'/>
 
       <a-entity position='0 0 0'>
         <a-model scale='1.1 1.1 1.1' src='/assets/dino.dae' sound='src: /assets/trex.mp3; loop: true; autoplay: true; volume: 10;' position='33 -8 0' rotation='0 95 0'>
@@ -28,14 +31,14 @@ class DinoScene extends React.Component {
       <a-light type='directional' color='#f6da80' position='3 7 -1' intensity='1' />
       <a-light type='ambient' color='#f6da80' intensity='0.01' />
 
-      <a-plane id='ground' src='/assets/muddyGround.jpg' position='0 0 -3' rotation='-90 0 0' width='10' height='10' />
+      <a-plane id='ground' src='#ground' position='0 0 -3' rotation='-90 0 0' width='10' height='10' />
 
       <a-entity position='0 1.5 0'> 
         <a-camera id='camera' wasd-controls-enabled='true'/>
       </a-entity>
 
       <a-entity position='0 10 -10'>
-        <a-plane src='/assets/ptero.png' sound='src: /assets/pter.mp3; autoplay: true; loop: true; volume: 10;' transparent='true' width='3' height='2' rotation='90 0 0'/>
+        <a-plane src='#ptero' sound='src: /assets/pter.mp3; autoplay: true; loop: true; volume: 10;' transparent='true' width='3' height='2' rotation='90 0 0'/>
         <a-animation
           attribute='position'
           dur='15000'
